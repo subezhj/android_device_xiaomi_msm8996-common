@@ -174,4 +174,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # VNDK
 PRODUCT_PROPERTY_OVERRIDES += \
-		ro.vndk.version=28
+    ro.vndk.version=28

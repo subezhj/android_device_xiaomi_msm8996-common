@@ -172,7 +172,7 @@ PRODUCT_PACKAGES += \
     liboverlay \
     libqdMetaData.system \
     libtinyxml \
-		libvulkan
+    libvulkan
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/calib.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/calib.cfg
