@@ -171,3 +171,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0
+
+# VNDK
+PRODUCT_PROPERTY_OVERRIDES += \
+		ro.vndk.version=28
