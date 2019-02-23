@@ -75,7 +75,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.qualcomm.cabl=0 \
     ro.qcom.ad=1 \
-    ro.qcom.ad.calib.data=/system/etc/calib.cfg \
+    ro.qcom.ad.calib.data=/vendor/etc/calib.cfg \
     ro.qcom.ad.sensortype=2
 
 # DRM
@@ -128,7 +128,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Priv-app permissions whitelist
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.control_privapp_permissions=enforce
+    ro.control_privapp_permissions=log
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
