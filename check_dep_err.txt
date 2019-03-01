@@ -1,47 +1,15 @@
-error: vendor lib "/vendor/bin/hw/android.hardware.graphics.allocator@2.0-service" depends on vndk "/system/lib64/vndk-sp-28/android.hardware.graphics.allocator@2.0.so" but it must be copied to /system/lib[64]/vndk.
-error: vendor lib "/vendor/bin/hw/android.hardware.nfc@1.1-service" depends on vendor_available "/system/lib64/vendor.nxp.nxpese@1.0.so" but it must be copied to /vendor/lib[64].
-error: vendor lib "/vendor/bin/hw/android.hardware.nfc@1.1-service" depends on vendor_available "/system/lib64/vendor.nxp.nxpnfc@1.0.so" but it must be copied to /vendor/lib[64].
-error: vendor lib "/vendor/bin/hw/android.hardware.power@1.1-service-qti" depends on non-eligible lib "/system/lib64/vendor.lineage.power@1.0.so".
-error: vendor lib "/vendor/bin/hw/vendor.lineage.livedisplay@1.0-service-sdm" depends on non-eligible lib "/system/lib64/vendor.lineage.livedisplay@1.0.so".
-error: vendor lib "/vendor/bin/hw/vendor.lineage.trust@1.0-service" depends on non-eligible lib "/system/lib64/vendor.lineage.trust@1.0.so".
-error: vendor lib "/vendor/lib/camera.device@1.0-impl.so" depends on non-eligible lib "/system/lib/vendor.qti.hardware.camera.device@1.0.so".
-error: vendor lib "/vendor/lib/camera.device@1.0-impl.so" depends on vndk "/system/lib/vndk-sp-28/android.hardware.graphics.allocator@2.0.so" but it must be copied to /system/lib[64]/vndk.
-error: vendor lib "/vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so" depends on non-eligible lib "/system/lib/vendor.qti.hardware.camera.device@1.0.so".
-error: vendor lib "/vendor/lib/hw/android.hardware.graphics.allocator@2.0-impl.so" depends on vndk "/system/lib/vndk-sp-28/android.hardware.graphics.allocator@2.0.so" but it must be copied to /system/lib[64]/vndk.
-error: vendor lib "/vendor/lib/hw/hwcomposer.msm8996.so" depends on non-eligible lib "/system/lib/vendor.display.config@1.1.so".
-error: vendor lib "/vendor/lib/hw/hwcomposer.msm8996.so" depends on non-eligible lib "/system/lib/vendor.display.config@1.0.so".
 error: vendor lib "/vendor/lib/hw/vendor.qti.hardware.iop@1.0-impl.so" depends on non-eligible lib "/system/lib/vendor.qti.hardware.iop@1.0.so".
-error: vendor lib "/vendor/lib/libSonyIMX298PdafLibrary.so" depends on non-eligible lib "/system/lib/libstdc++.so".
-error: vendor lib "/vendor/lib/libchromaflash.so" depends on non-eligible lib "/system/lib/libstdc++.so".
-error: vendor lib "/vendor/lib/libdrmutils.so" depends on vendor_available "/system/lib/libdrm.so" but it must be copied to /vendor/lib[64].
-error: vendor lib "/vendor/lib/libeffects.so" depends on vendor_available "/system/lib/libeffectsconfig.so" but it must be copied to /vendor/lib[64].
 error: vendor lib "/vendor/lib/libmmcamera2_stats_modules.so" depends on non-eligible lib "/system/lib/libandroid.so".
-error: vendor lib "/vendor/lib/libmmcamera_hdr_gb_lib.so" depends on non-eligible lib "/system/lib/libstdc++.so".
-error: vendor lib "/vendor/lib/libmorpho_easy_hdr.so" depends on non-eligible lib "/system/lib/libstdc++.so".
-error: vendor lib "/vendor/lib/libmorpho_hdr_checker.so" depends on non-eligible lib "/system/lib/libstdc++.so".
-error: vendor lib "/vendor/lib/libmorpho_image_stab4.so" depends on non-eligible lib "/system/lib/libstdc++.so".
-error: vendor lib "/vendor/lib/libmpbase.so" depends on non-eligible lib "/system/lib/libstdc++.so".
 error: vendor lib "/vendor/lib/libmpbase.so" depends on non-eligible lib "/system/lib/libandroid.so".
-error: vendor lib "/vendor/lib/liboptizoom.so" depends on non-eligible lib "/system/lib/libstdc++.so".
 error: vendor lib "/vendor/lib/libqti-iopd.so" depends on non-eligible lib "/system/lib/libnativehelper.so".
-error: vendor lib "/vendor/lib/libsdmcore.so" depends on vendor_available "/system/lib/libdrm.so" but it must be copied to /vendor/lib[64].
-error: vendor lib "/vendor/lib/libseemore.so" depends on non-eligible lib "/system/lib/libstdc++.so".
-error: vendor lib "/vendor/lib/libubifocus.so" depends on non-eligible lib "/system/lib/libstdc++.so".
-error: vendor lib "/vendor/lib/soundfx/libdirac.so" depends on non-eligible lib "/system/lib/libmedia.so".
 error: vendor lib "/vendor/lib/soundfx/libdirac.so" depends on non-eligible lib "/system/lib/libaudioclient.so".
-error: vendor lib "/vendor/lib64/camera.device@1.0-impl.so" depends on non-eligible lib "/system/lib64/vendor.qti.hardware.camera.device@1.0.so".
-error: vendor lib "/vendor/lib64/camera.device@1.0-impl.so" depends on vndk "/system/lib64/vndk-sp-28/android.hardware.graphics.allocator@2.0.so" but it must be copied to /system/lib[64]/vndk.
-error: vendor lib "/vendor/lib64/ese_spi_nxp.so" depends on vendor_available "/system/lib64/vendor.nxp.nxpese@1.0.so" but it must be copied to /vendor/lib[64].
-error: vendor lib "/vendor/lib64/ese_spi_nxp.so" depends on vendor_available "/system/lib64/vendor.nxp.nxpnfc@1.0.so" but it must be copied to /vendor/lib[64].
-error: vendor lib "/vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so" depends on non-eligible lib "/system/lib64/vendor.qti.hardware.camera.device@1.0.so".
-error: vendor lib "/vendor/lib64/hw/android.hardware.graphics.allocator@2.0-impl.so" depends on vndk "/system/lib64/vndk-sp-28/android.hardware.graphics.allocator@2.0.so" but it must be copied to /system/lib[64]/vndk.
-error: vendor lib "/vendor/lib64/hw/hwcomposer.msm8996.so" depends on non-eligible lib "/system/lib64/vendor.display.config@1.0.so".
-error: vendor lib "/vendor/lib64/hw/hwcomposer.msm8996.so" depends on non-eligible lib "/system/lib64/vendor.display.config@1.1.so".
+error: vendor lib "/vendor/lib/soundfx/libdirac.so" depends on non-eligible lib "/system/lib/libmedia.so".
 error: vendor lib "/vendor/lib64/hw/vendor.qti.hardware.iop@1.0-impl.so" depends on non-eligible lib "/system/lib64/vendor.qti.hardware.iop@1.0.so".
 error: vendor lib "/vendor/lib64/lib-dplmedia.so" depends on non-eligible lib "/system/lib64/libmedia.so".
 error: vendor lib "/vendor/lib64/libbt-hidlclient.so" depends on non-eligible lib "/system/lib64/com.qualcomm.qti.ant@1.0.so".
-error: vendor lib "/vendor/lib64/libdrmutils.so" depends on vendor_available "/system/lib64/libdrm.so" but it must be copied to /vendor/lib[64].
-error: vendor lib "/vendor/lib64/libeffects.so" depends on vendor_available "/system/lib64/libeffectsconfig.so" but it must be copied to /vendor/lib[64].
 error: vendor lib "/vendor/lib64/libqti-iopd.so" depends on non-eligible lib "/system/lib64/libnativehelper.so".
-error: vendor lib "/vendor/lib64/libsdmcore.so" depends on vendor_available "/system/lib64/libdrm.so" but it must be copied to /vendor/lib[64].
-error: vendor lib "/vendor/lib64/nfc_nci_nxp.so" depends on vendor_available "/system/lib64/vendor.nxp.nxpese@1.0.so" but it must be copied to /vendor/lib[64].
+
+LINKAGE ERRORS:
+
+CANNOT LINK EXECUTABLE "/vendor/bin/ims_rtp_daemon": cannot locate symbol "_ZN7android15PermissionCache15checkPermissionERKNS_8String16Eij" referenced by "/system/lib64/libmedia.so"...
+CANNOT LINK EXECUTABLE "/vendor/bin/mm-qcamera-daemon": cannot locate symbol "_ZN7android13AppOpsManagerC1Ev" referenced by "/system/lib/libsensor.so"...
