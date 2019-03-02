@@ -21,6 +21,8 @@
     android:versionName="2.5"
     android:sharedUserId="android.uid.system">
 
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
     <protected-broadcast android:name="org.lineageos.settings.device.CUST_UPDATE" />
 
     <uses-sdk
