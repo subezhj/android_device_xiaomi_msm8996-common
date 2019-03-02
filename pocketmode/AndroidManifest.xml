@@ -21,8 +21,6 @@
     android:versionName="1.2"
     android:sharedUserId="android.uid.system">
 
-    <uses-permission android:name="lineageos.permission.HARDWARE_ABSTRACTION_ACCESS" />
-
     <uses-sdk
         android:minSdkVersion="27" />
 
@@ -34,7 +32,7 @@
 
         <receiver android:name=".Startup" >
             <intent-filter android:priority="99" >
-                <action android:name="lineageos.intent.action.INITIALIZE_LINEAGE_HARDWARE" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
 
