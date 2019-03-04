@@ -1,15 +1,4 @@
-error: vendor lib "/vendor/lib/hw/vendor.qti.hardware.iop@1.0-impl.so" depends on non-eligible lib "/system/lib/vendor.qti.hardware.iop@1.0.so".
-error: vendor lib "/vendor/lib/libmmcamera2_stats_modules.so" depends on non-eligible lib "/system/lib/libandroid.so".
-error: vendor lib "/vendor/lib/libmpbase.so" depends on non-eligible lib "/system/lib/libandroid.so".
 error: vendor lib "/vendor/lib/libqti-iopd.so" depends on non-eligible lib "/system/lib/libnativehelper.so".
 error: vendor lib "/vendor/lib/soundfx/libdirac.so" depends on non-eligible lib "/system/lib/libaudioclient.so".
-error: vendor lib "/vendor/lib/soundfx/libdirac.so" depends on non-eligible lib "/system/lib/libmedia.so".
-error: vendor lib "/vendor/lib64/hw/vendor.qti.hardware.iop@1.0-impl.so" depends on non-eligible lib "/system/lib64/vendor.qti.hardware.iop@1.0.so".
-error: vendor lib "/vendor/lib64/lib-dplmedia.so" depends on non-eligible lib "/system/lib64/libmedia.so".
 error: vendor lib "/vendor/lib64/libbt-hidlclient.so" depends on non-eligible lib "/system/lib64/com.qualcomm.qti.ant@1.0.so".
 error: vendor lib "/vendor/lib64/libqti-iopd.so" depends on non-eligible lib "/system/lib64/libnativehelper.so".
-
-LINKAGE ERRORS:
-
-CANNOT LINK EXECUTABLE "/vendor/bin/ims_rtp_daemon": cannot locate symbol "_ZN7android15PermissionCache15checkPermissionERKNS_8String16Eij" referenced by "/system/lib64/libmedia.so"...
-CANNOT LINK EXECUTABLE "/vendor/bin/mm-qcamera-daemon": cannot locate symbol "_ZN7android13AppOpsManagerC1Ev" referenced by "/system/lib/libsensor.so"...
