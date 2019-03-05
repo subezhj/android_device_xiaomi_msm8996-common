@@ -363,7 +363,8 @@ PRODUCT_PACKAGES += \
     vndk_package \
     libstdc++.vendor \
     libicuuc.vendor \
-    libnativehelper.vendor
+    libnativehelper.vendor \
+    libgui.vendor
 
 # Vibrator
 PRODUCT_PACKAGES += \
