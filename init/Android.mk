@@ -18,11 +18,9 @@ LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_MODULE_TAGS := optional
-LOCAL_C_INCLUDES := \
-    system/core/base/include \
-    system/core/init
-LOCAL_CFLAGS := -Wall -DANDROID_TARGET=\"$(TARGET_BOARD_PLATFORM)\"
+LOCAL_SHARED_LIBRARIES := libcutils
+LOCAL_CFLAGS += -Wall  -Werror
 LOCAL_SRC_FILES := init_msm8996.cpp
-LOCAL_MODULE := libinit_msm8996
-
-include $(BUILD_STATIC_LIBRARY)
+LOCAL_MODULE := init_msm8996
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_EXECUTABLE)

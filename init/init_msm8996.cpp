@@ -29,50 +29,35 @@
    IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include <sys/sysinfo.h>
+#include <cutils/properties.h>
 
-#include <android-base/properties.h>
-
-#include "property_service.h"
-#include "vendor_init.h"
-
-using android::base::GetProperty;
-using android::init::property_set;
-
-char const *heapminfree;
-char const *heapmaxfree;
-
-void check_device()
-{
+int main() {
+    char prop_value[PROPERTY_VALUE_MAX];
     struct sysinfo sys;
 
-    sysinfo(&sys);
-
-    if (sys.totalram > 3072ull * 1024 * 1024) {
-        // from - phone-xxxhdpi-4096-dalvik-heap.mk
-        heapminfree = "4m";
-        heapmaxfree = "16m";
-    } else {
-        // from - phone-xxhdpi-3072-dalvik-heap.mk
-        heapminfree = "512k";
-        heapmaxfree = "8m";
-    }
-}
-
-void vendor_load_properties()
-{
-    std::string platform;
-
-    platform = GetProperty("ro.board.platform", "");
-    if (platform != ANDROID_TARGET)
-        return;
-
-    check_device();
+    property_get("ro.board.platform", prop_value, "");
+    if (strcmp(prop_value, "msm8996") != 0)
+        return -1;
 
     property_set("dalvik.vm.heapstartsize", "8m");
     property_set("dalvik.vm.heapgrowthlimit", "256m");
     property_set("dalvik.vm.heapsize", "512m");
     property_set("dalvik.vm.heaptargetutilization", "0.75");
-    property_set("dalvik.vm.heapminfree", heapminfree);
-    property_set("dalvik.vm.heapmaxfree", heapmaxfree);
+
+    sysinfo(&sys);
+    if (sys.totalram > 3072ull * 1024 * 1024) {
+        // from - phone-xxxhdpi-4096-dalvik-heap.mk
+        property_set("dalvik.vm.heapminfree", "4m");
+        property_set("dalvik.vm.heapmaxfree", "16m");
+    } else {
+        // from - phone-xxhdpi-3072-dalvik-heap.mk
+        property_set("dalvik.vm.heapminfree", "512k");
+        property_set("dalvik.vm.heapmaxfree", "8m");
+    }
+
+    return 0;
 }

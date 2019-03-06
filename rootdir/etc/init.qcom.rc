@@ -506,6 +506,13 @@ service readmac /vendor/bin/readmac
     group system net_raw
     oneshot
 
+service init_msm8996 /vendor/bin/init_msm8996
+    class core
+    user system
+    group system
+    writepid /dev/cpuset/system-background/tasks
+    disabled
+
 service thermal-engine /vendor/bin/thermal-engine -c ${sys.qcom.thermalcfg:-/vendor/etc/thermal-engine-8996.conf}
     class main
     user root
