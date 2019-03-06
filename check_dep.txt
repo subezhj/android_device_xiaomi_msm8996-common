@@ -1,6 +1,3 @@
-/vendor/lib/libqti-iopd.so
-	/system/lib/libnativehelper.so
-
 /vendor/lib/soundfx/libdirac.so
 	/system/lib/libaudioclient.so
 		_ZN7android11AudioSystem13setParametersERKNS_7String8E
@@ -18,6 +15,3 @@
 		_ZN3com8qualcomm3qti3ant4V1_016IAntHciCallbacks4pingEv
 		_ZN3com8qualcomm3qti3ant4V1_016IAntHciCallbacks5debugERKN7android8hardware11hidl_handleERKNS6_8hidl_vecINS6_11hidl_stringEEE
 		_ZN3com8qualcomm3qti3ant4V1_07IAntHci10getServiceERKNSt3__112basic_stringIcNS5_11char_traitsIcEENS5_9allocatorIcEEEEb
-
-/vendor/lib64/libqti-iopd.so
-	/system/lib64/libnativehelper.so

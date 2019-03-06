@@ -1,4 +1,2 @@
-error: vendor lib "/vendor/lib/libqti-iopd.so" depends on non-eligible lib "/system/lib/libnativehelper.so".
 error: vendor lib "/vendor/lib/soundfx/libdirac.so" depends on non-eligible lib "/system/lib/libaudioclient.so".
 error: vendor lib "/vendor/lib64/libbt-hidlclient.so" depends on non-eligible lib "/system/lib64/com.qualcomm.qti.ant@1.0.so".
-error: vendor lib "/vendor/lib64/libqti-iopd.so" depends on non-eligible lib "/system/lib64/libnativehelper.so".
