@@ -502,8 +502,8 @@ service readfem /vendor/bin/readfem
 
 service readmac /vendor/bin/readmac
     class main
-    user system
-    group system net_raw
+    user root
+    group root oem_2901
     oneshot
 
 service init_msm8996 /vendor/bin/init_msm8996
